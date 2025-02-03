@@ -22,8 +22,10 @@ noButton.addEventListener("click", function() {
         yesButton.style.fontSize = (parseInt(window.getComputedStyle(yesButton).fontSize) + 5) + "px";
     }
 
-     if (noClickCount >= noTexts.length) {
-        noButton.remove();
+    // Zablokuj przycisk "No" po 7 kliknięciach
+    if (noClickCount >= noTexts.length) {
+        noButton.disabled = true; // Wyłącz przycisk "No"
+        noButton.style.cursor = "not-allowed"; // Zmień kursor na "not-allowed"
 });
 
 yesButton.addEventListener("click", function() {
