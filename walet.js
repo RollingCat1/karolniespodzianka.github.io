@@ -17,8 +17,8 @@ noButton.addEventListener("click", function() {
     let screenHeight = window.innerHeight;
 
     if (currentWidth < screenWidth || currentHeight < screenHeight) {
-        yesButton.style.width = (currentWidth + 200) + "px";
-        yesButton.style.height = (currentHeight + 150) + "px";
+        yesButton.style.width = (currentWidth + 220) + "px";
+        yesButton.style.height = (currentHeight + 170) + "px";
         yesButton.style.fontSize = (parseInt(window.getComputedStyle(yesButton).fontSize) + 5) + "px";
     }
 
